@@ -1,0 +1,32 @@
+#gallery{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+
+}
+#gallery .photos img{
+	width: 80%;
+	position: absolute;
+	left: 0;
+	opacity: 0;
+	transition: opacity 1s;
+
+}
+
+#gallery .photos p{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: silver;
+
+
+}
+
+#gallery .photos img.shoved{
+	opacity: 1;
+}
+#gallery .photos{
+	position: relative;
+	height: 670px;
+}

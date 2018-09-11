@@ -1,0 +1,22 @@
+#gallery{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+
+}
+#gallery .photos img{
+	width: 80%;
+	display: none;
+}
+#gallery .photos img:first-child{
+	display:block;
+}
+#gallery .photos p{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: silver;
+
+
+}
