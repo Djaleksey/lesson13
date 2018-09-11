@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>c ></form></title>
+	<meta name="description" content="здесь идет описание о чем веб страничка до 256 символов">
+	<meta name="keywords" content="создаються ключевые слова через запятую">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/bm1.css">
+
+	
+</head>
+
+
+<body>
+	
+
+
+<header>
+	<nav class="animenu"> 
+  <button class="animenu__toggle">
+    <span class="animenu__toggle__bar"></span>
+    <span class="animenu__toggle__bar"></span>
+    <span class="animenu__toggle__bar"></span>
+  </button>
+  <ul class="animenu__nav">
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">Archive</a>
+      <ul class="animenu__nav__child">
+        <li><a href="">Sub Item 1</a></li>
+        <li><a href="">Sub Item 2</a></li>
+        <li><a href="">Sub Item 3</a></li>
+      </ul>
+    </li>     
+    <li>
+      <a href="#">Categories</a>
+      <ul class="animenu__nav__child">
+        <li><a href="../a/a.html">a</a></li>
+        <li><a href="../b/b.html">b</a></li>
+        <li><a href="c.html">c</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="../index.html">About</a>
+    </li>
+    <li>
+      <a href="#">Contact</a>
+    </li>                 
+  </ul>
+</nav>	
+</header>
+
+
+<main>
+	<section>
+		<h1>
+			c
+		</h1>
+   
+
+    <form action="" name="form1">
+
+<select name="item1" onchange="fotos();" id="">
+  <option value="">foto1</option>
+  <option value="">foto2</option>
+  <option value="">foto3</option>
+  <option value="">foto4</option>
+  <option value="">foto5</option>
+  <option value="">foto6</option>
+  <option value="">foto7</option>
+  <option value="">foto8</option>
+  <option value="">foto9</option>
+  <option value="">foto10</option>
+</select>
+
+
+
+    </form>
+
+<img src="../image/b1.jpg" alt="" id="foto2">
+
+<div id="box">
+<div class="box red"></div>
+<div class="box green"></div>
+<div class="box blue"></div>
+<div class="box yellow"></div>
+	</section>
+	</div>
+
+</main>
+
+<footer>
+	
+
+</footer>
+<script src="../js/bm1.js">
+	</script>
+
+<script>
+  var pictures=[];
+  for(i=0; i<=10; i++){
+    pictures[i]=new Image();
+  }
+
+  pictures[0].src='../image/b1.jpg';
+
+  pictures[1].src='../image/b2.jpg';
+
+  pictures[2].src='../image/b3.jpg';
+
+  pictures[3].src='../image/b4.jpg';
+
+  pictures[4].src='../image/b5.jpg';
+
+  pictures[5].src='../image/b6.jpg';
+
+  pictures[6].src='../image/b7.jpg';
+
+  pictures[7].src='../image/b8.jpg';
+
+  pictures[8].src='../image/b9.jpg';
+
+  pictures[9].src='../image/b10.jpg';
+
+ 
+
+function fotos(){
+  document.images.foto2.src=pictures[document.form1.item1.selectedIndex].src;
+
+}
+</script>
+
+<script src="../js/anime.js"></script>
+
+<script>
+
+anime({
+  targets: 'div.box.red',
+  translateY:[
+{value: 200, duration: 500},
+
+{value: 0, duration: 800}
+
+  ],
+  rotate:
+  {
+    value: '1turn',
+    easing:'easeInOutSine'
+  }
+  
+});
+
+anime1({
+  targets: 'div.box.blue',
+  translateY:[
+{value: 150, duration: 500},
+
+{value: 0, duration: 800}
+
+  ],
+  rotate:
+  {
+    value: '1turn',
+    easing:'easeInOutSine'
+  }
+  
+});
+
+
+anime2({
+  targets: 'div.box.green',
+  translateY:[
+{value: 200, duration: 500},
+
+{value: 0, duration: 800}
+
+  ],
+  rotate:
+  {
+    value: '1turn',
+    easing:'easeInOutSine'
+  }
+  
+});
+
+
+anime3({
+  targets: 'div.box.yellow',
+  translateY:[
+{value: 200, duration: 500},
+
+{value: 0, duration: 800}
+
+  ],
+  rotate:
+  {
+    value: '1turn',
+    easing:'easeInOutSine'
+  }
+  
+});
+
+</script>
+
+</body>
+</html>
